@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F3F3"
+        tools:context=".MainActivity">
+
+    <AutoCompleteTextView
+            android:id="@+id/txtProductNameToSearch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FFF"
+            android:completionThreshold="1"
+            android:hint="aradığınız ürün mü var?"
+            android:paddingStart="48dp"
+            android:paddingLeft="48dp"
+            android:textColor="#4A4A4A"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+            android:id="@+id/imgSearchImage"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/ic_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+            android:id="@+id/lytProductInfo"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="24dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/txtProductNameToSearch"
+            app:layout_constraintStart_toStartOf="@id/txtProductNameToSearch"
+            app:layout_constraintTop_toBottomOf="@id/txtProductNameToSearch">
+
+        <ImageView
+                android:id="@+id/imgProductImage"
+                android:layout_width="144dp"
+                android:layout_height="144dp"
+                android:src="@drawable/ariel"/>
+
+        <TextView
+                android:id="@+id/txtProductName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:gravity="center"
+                android:textColor="#4A4A4A"
+                android:textSize="24sp"
+                tools:text="Ariel Matik Renkliler İçin"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/lytMigros"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="24dp"
+            android:background="#f8fcfd"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/lytProductInfo"
+            app:layout_constraintStart_toStartOf="@+id/lytProductInfo"
+            app:layout_constraintTop_toBottomOf="@id/lytProductInfo">
+
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/migros"/>
+
+        <TextView
+                android:id="@+id/txtMigrosPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="17,56 TL"
+                android:textColor="#4A4A4A"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/lytSok"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="24dp"
+            android:background="#f8fcfd"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/lytMigros"
+            app:layout_constraintStart_toStartOf="@+id/lytMigros"
+            app:layout_constraintTop_toBottomOf="@id/lytMigros">
+
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/sok"/>
+
+        <TextView
+                android:id="@+id/txtSokPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="17,56 TL"
+                android:textColor="#4A4A4A"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/lytA101"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="24dp"
+            android:background="#f8fcfd"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/lytSok"
+            app:layout_constraintStart_toStartOf="@+id/lytSok"
+            app:layout_constraintTop_toBottomOf="@id/lytSok">
+
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/a101"/>
+
+        <TextView
+                android:id="@+id/txtA101Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="17,56 TL"
+                android:textColor="#4A4A4A"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/lytBim"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="24dp"
+            android:background="#f8fcfd"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/lytA101"
+            app:layout_constraintStart_toStartOf="@+id/lytA101"
+            app:layout_constraintTop_toBottomOf="@id/lytA101">
+
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/bim"/>
+
+        <TextView
+                android:id="@+id/txtBimPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="17,56 TL"
+                android:textColor="#4A4A4A"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
